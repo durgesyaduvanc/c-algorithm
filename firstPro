@@ -1,0 +1,51 @@
+#include<stdio.h>
+void main()
+{
+	int i,j,arr[3][3],arr1[3][3],arr2[3][3];
+	printf("enter first 3*3 matrix number\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	printf("Enter the second matrix element\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&arr1[i][j]);
+		}
+	}
+		printf("entered first 3*3 matrix element is \n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d  ",arr[i][j]);
+			
+		}
+		printf("\n");
+	}
+		printf("entered second 3*3 matrix element is \n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d  ",arr1[i][j]);
+		}
+		printf("\n");
+	}
+	printf("addition of two matrix\n");
+		printf("**********************\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			arr2[i][j]=arr[i][j]+arr1[i][j];
+			printf("%d  ",arr2[i][j]);
+		}
+		printf("\n");
+	}
+}
